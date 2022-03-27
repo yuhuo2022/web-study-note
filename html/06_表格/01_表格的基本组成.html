@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>认识表格</title>
+</head>
+<body>
+<!--
+表格的作用很多，在web1.0时代，表格用于布局，但web2.0开始后，表格的布局作用已被废弃，现在只保留了表格的基本作用——数据展示
+
+表格的基本结构由table（表格）、tr（行）、td(单元格)构成。
+
+完整的表格结构由table、caption（表格标题）、th（表头单元格，会加粗字体居中显示）、td（普通单元格）构成。
+
+为了更好的表示语义化，表格还有thead\tbody\tfoot三个标签，表示表头、表身、表尾，这三个可以不写，浏览器会自动补充，但建议写上，
+
+因为除了语义化外，还可以分块控制css样式。
+-->
+<table>
+  <tr>
+    <td>技术</td>
+    <td>功能</td>
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>搭建网页结构</td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>装饰网页外表</td>
+  </tr>
+  <tr>
+    <td>JavaScript</td>
+    <td>控制网页的交互</td>
+  </tr>
+</table>
+<table>
+  <caption>新网页三剑客</caption>
+  <tr>
+    <th>技术</th>
+    <th>功能</th>
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>搭建网页结构</td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>装饰网页外表</td>
+  </tr>
+  <tr>
+    <td>JavaScript</td>
+    <td>控制网页的交互</td>
+  </tr>
+</table>
+<table>
+  <!--  表名-->
+  <caption>新网页三剑客</caption>
+  <!--  表头-->
+  <thead>
+  <tr>
+    <th>技术</th>
+    <th>功能</th>
+  </tr>
+  </thead>
+  <!--  表体-->
+  <tbody>
+  <tr>
+    <td>HTML</td>
+    <td>搭建网页结构</td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>装饰网页外表</td>
+  </tr>
+  <tr>
+    <td>JavaScript</td>
+    <td>控制网页的交互</td>
+  </tr>
+  </tbody>
+  <!--  表尾-->
+  <tfoot>
+    <tr>
+      <td>新的网页三剑客取代了旧的网页三剑客</td>
+    </tr>
+  </tfoot>
+</table>
+</body>
+</html>

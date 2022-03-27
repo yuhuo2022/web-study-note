@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>无序列表ul</title>
+</head>
+<body>
+<!--
+列表主要分为有序列表、无序列表、定义列表三种。此外还有菜单列表、目录列表等在HTML5中已被废弃。
+
+无序列表就是没有顺序的列表，用ul表示，每一个列表项是li表示，默认是实心小圆点(可以通过type属性或者css来修改)
+
+无序列表的type属性有三个值：disc(默认)、circle、square。
+
+列表的type属性现在已被废弃，修改列表的样式用css的list-style-type属性代替
+（有序、无序）列表和列表项需要搭配使用，不能单独使用;列表的子元素只能是li，其他的都要在li中。
+三种列表都是是可以嵌套的
+在实际开发中，一般都用无序列表，很少用到有序列表和定义列表。
+-->
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>Vue.js</li>
+</ul>
+<ul type="square">
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>Vue.js</li>
+</ul>
+<ul type="circle">
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>Vue.js</li>
+</ul>
+<ul>
+  <li>
+    荤菜
+    <ul>
+      <li>红烧肉</li>
+      <li>红烧鱼</li>
+      <li>红烧排骨</li>
+      <li>红烧肘子</li>
+    </ul>
+  </li>
+  <li>
+    素菜
+    <ul>
+      <li>西红柿鸡蛋</li>
+      <li>地三鲜</li>
+      <li>手撕包菜</li>
+      <li>干锅土豆</li>
+    </ul>
+  </li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>表格合并</title>
+  <style>
+    table,tr,td{
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+<!--
+表格合并分为行合并（rowspan）和列合并(colspan)，就现在而言，表格的合并其实很少使用了。
+
+行合并就是给td加上rowspan="合并的行数",然后删除多余的td
+
+列合并就是给td加上colspan="合并的列数",然后删除多余的td
+-->
+<table>
+  <tr>
+    <td>技术</td>
+    <td>功能</td>
+  </tr>
+  <tr>
+    <td rowspan="2">HTML、CSS</td>
+    <td rowspan="2">搭建网页结构和样式</td>
+  </tr>
+  <tr></tr>
+  <tr>
+    <td colspan="2">JavaScript控制网页的交互</td>
+  </tr>
+</table>
+</body>
+</html>

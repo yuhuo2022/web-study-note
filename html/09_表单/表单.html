@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <title>表单</title>
+  </head>
+
+  <body>
+    <!-- 
+    form表单域，里面存放表单元素
+    action:表单要提交的地址
+    name：表单的名字，用来区分不同表单
+    method：表单的提交方式，有get和post两种
+  -->
+    <form action="" name="" method="get">
+      <!-- 
+      input可以实现很多表单，通过不同的type属性值实现
+      text：单行文本框
+      password:密码框
+      radio：单选框  需要用name属性分组，否则无效
+      checkbox：复选框 需要用name属性分组，否则无效
+      button：普通按钮
+      submit：提交所属表单按钮
+      reset：重置所属表单项内容按钮
+      file：文件上传
+    -->
+      <label>
+        姓名：<input type="text" value="" name="name"/><br />
+        密码：<input type="password" name="age"/>
+      <br />
+      <label>
+        性别：
+        <input type="radio" name="sex" value="0" checked/>男
+        <input type="radio" name="sex" value="1"/>女
+      <br />
+        爱好：
+        <input type="checkbox" name="hobby" value="吃饭"/>吃饭
+        <input type="checkbox" name="hobby" value="睡觉" checked/>睡觉
+        <input type="checkbox" name="hobby" value="打豆豆" checked/>打豆豆 
+        <br />
+      上传照片：<input type="file" name="pic" /> <br />
+      <!--
+        select：下拉列表，name属性用于分组  multiple属性用于允许选择多个，ctrl+鼠标左键选择，不写该属性表示选择1个
+        option:下拉列表项 selected默认选中 
+      -->
+        所属区域：
+        <select name="city" multiple>
+          <option value="hankou">汉口</option>
+          <option value="wuchang" selected>武昌</option>
+          <option value="hanyang">汉阳</option>
+        </select>
+      <br />
+      <!-- 
+        textarea:文本域，也叫多行文本框
+      -->
+        自我介绍：<textarea name="me" cols="30" rows="10" placeholder="请填写自我介绍"></textarea>
+      <br />
+      <input type="button" value="确认" />
+      <input type="reset" value="重置" />
+      <input type="submit" value="提交" />
+      </label>
+    </form>
+  </body>
+</html>
