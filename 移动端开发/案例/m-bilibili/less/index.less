@@ -1,0 +1,134 @@
+@import "base";
+
+@baseVw: 3.75vw;
+@baseColor: #fb7299;
+//头部
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: (84 / @baseVw);
+	background-color: #fff;
+	z-index: 1;
+	.top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: (18 / @baseVw);
+		padding-right: (12/ @baseVw);
+		height: (44 / @baseVw);
+
+		.left {
+			.iconfont {
+				font-size: (28 / @baseVw);
+				color: @baseColor;
+			}
+		}
+
+		.right {
+			display: flex;
+
+			.iconfont {
+				font-size: (22 / @baseVw);
+				color: #ccc;
+			}
+
+			.login {
+				width: (24 / @baseVw);
+				height: (24 / @baseVw);
+				margin-left: (24 / @baseVw);
+			}
+
+			.download {
+				width: (72 / @baseVw);
+				height: (24 / @baseVw);
+				margin-left: (24 / @baseVw);
+			}
+		}
+	}
+
+	.bottom {
+		display: flex;
+		justify-content: space-between;
+		height: (40 / @baseVw);
+		border-bottom: 1px solid #eee;
+
+		.tab {
+			ul {
+				display: flex;
+
+				li {
+					padding: 0 (16 / @baseVw);
+
+					a {
+						display: block;
+						height: (38 / @baseVw);
+						line-height: (38 / @baseVw);
+						text-align: center;
+						font-size: (14 / @baseVw);
+
+						&.current {
+							color: @baseColor;
+							border-bottom: 2px solid @baseColor;
+						}
+					}
+
+				}
+			}
+		}
+
+		.more {
+			display: block;
+			width: (44 / @baseVw);
+			height: (44 / @baseVw);
+			text-align: center;
+			line-height: (44 / @baseVw);
+			color: #ccc;
+
+			.iconfont {
+				font-size: (22 / @baseVw);
+			}
+		}
+	}
+}
+
+// 视频
+.video-content {
+	padding: (84 / @baseVw) (5 / @baseVw) 0;
+
+	.video-list {
+		display: flex;
+		flex-wrap: wrap;
+
+		a {
+			width: 50%;
+			padding: (8 / @baseVw) (5 / @baseVw);
+			font-size: (12 / @baseVw);
+
+			.pic {
+				position: relative;
+
+				.count {
+					display: flex;
+					justify-content: space-between;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					padding: (8 / @baseVw);
+					background-image: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0));
+					color: #fff;
+
+					i {
+						vertical-align: middle;
+					}
+				}
+			}
+
+			.txt {
+				margin-top: (5 / @baseVw);
+			}
+		}
+	}
+}
