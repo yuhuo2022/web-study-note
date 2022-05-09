@@ -188,5 +188,14 @@
 	</div>
 </section>
 <!-- 底部 -->
+<script>
+	const list = document.querySelector('.tab ul');
+	list.addEventListener('click', function (e) {
+		if (e.target.tagName === 'A') {
+			document.querySelector('.tab .current').classList.remove('current');
+			e.target.classList.add('current');
+		}
+	});
+</script>
 </body>
 </html>
